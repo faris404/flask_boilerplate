@@ -28,6 +28,11 @@ def migrate():
 
 @app.command()
 def resource(name: str):
+    #check a folder already exists by name
+    is_exist = os.path.exists(os.path.join(os.getcwd(), f'resources/{name}'))
+    if is_exist:
+        print('resource already exist')
+        return
     # create a folder with name from the command in resource folder
     os.system(f'mkdir resources/{name}')
     os.system(f'touch resources/{name}/urls.py')

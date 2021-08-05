@@ -1,7 +1,7 @@
 from flask import Blueprint
 from flask_restful import Api
 from models import app
-from common.utils import reg_urls
+from common.core import reg_urls
 from resources.users.urls import urls as user_urls
 from resources.test.urls import urls as test_urls
 
