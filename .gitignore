@@ -12,3 +12,4 @@ migrations/
 .vscode
 *.pyc
 *.pyo
+errors.log
