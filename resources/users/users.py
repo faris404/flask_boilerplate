@@ -12,6 +12,7 @@ from common.response import Response
 class UserReg(MethodResource,Resource):
    @marshal_with(UserSchema)
    def get(self):
+
       try:
 
          data = User.query.all()
