@@ -13,6 +13,6 @@ dist/
 build/
 docs/_build/
 migrations/
-
+uploads/
 errors.log
 test.py
